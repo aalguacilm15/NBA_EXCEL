@@ -34,6 +34,7 @@ public class Interfaz extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Jugador1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -45,6 +46,10 @@ public class Interfaz extends javax.swing.JFrame {
         SpinnerTiros2 = new javax.swing.JSpinner();
         SpinnerTiros3 = new javax.swing.JSpinner();
         BotonCalcular = new javax.swing.JButton();
+        valoracionIngreso = new javax.swing.JTextField();
+        ValoracionTXT = new javax.swing.JLabel();
+
+        Jugador1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -77,6 +82,11 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
 
+        valoracionIngreso.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        ValoracionTXT.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        ValoracionTXT.setText("Valoración");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -96,16 +106,22 @@ public class Interfaz extends javax.swing.JFrame {
                                 .addComponent(Jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(45, 45, 45)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(ValoracionTXT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(SpinnerTiros3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(SpinnerTiros2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(SpinnerRealizados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(45, 45, 45)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(SpinnerRealizados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(SpinnerTiros3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(SpinnerTiros2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(valoracionIngreso, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(129, 129, 129)
+                        .addGap(132, 132, 132)
                         .addComponent(BotonCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(35, Short.MAX_VALUE))
         );
@@ -118,7 +134,7 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(46, 46, 46)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SpinnerRealizados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -130,9 +146,13 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SpinnerTiros3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(valoracionIngreso, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ValoracionTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
                 .addComponent(BotonCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addGap(29, 29, 29))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -199,6 +219,8 @@ public class Interfaz extends javax.swing.JFrame {
             int tirosRealizados = (int) SpinnerRealizados.getValue();
             int tirosMetidos2 = (int) SpinnerTiros2.getValue();
             int tirosMetidos3 = (int) SpinnerTiros3.getValue();
+            String valor = valoracionIngreso.getText();
+            
             
               if (nombreJugador.isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Por favor ingrese el nombre del jugador.");
@@ -209,13 +231,18 @@ public class Interfaz extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Los tiros realizados no pueden ser 0.");
                 return;
             }
+            
+            if (valor.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Por favor ingrese la valoración del jugador.");
+                return;
+            }
 
             // Calcular %FG y %eFG
             double porcentajeFG = ((double) (tirosMetidos2 + tirosMetidos3) / tirosRealizados) * 100;
             double porcentajeEFG = ((double) (tirosMetidos2 + 1.5 * tirosMetidos3) / tirosRealizados) * 100;
 
             // Crear archivo Excel
-            crearInformeExcel("C:\\Users\\algua\\OneDrive\\Documentos\\NetBeansProjects\\NBA_Excel\\ExcelNBA.xlsx", nombreJugador, tirosRealizados, tirosMetidos2, tirosMetidos3, porcentajeFG, porcentajeEFG);
+            crearInformeExcel("C:\\Users\\algua\\OneDrive\\Documentos\\NetBeansProjects\\NBA_Excel\\ExcelNBA.xlsx", nombreJugador, tirosRealizados, tirosMetidos2, tirosMetidos3, porcentajeFG, porcentajeEFG, valor);
 
             // Confirmación
             JOptionPane.showMessageDialog(null, "Informe generado exitosamente: EstadisticasNBA.xlsx");
@@ -225,7 +252,7 @@ public class Interfaz extends javax.swing.JFrame {
     }
     
     //Metodo para crear el archivo Excel
-    private void crearInformeExcel(String nombreArchivo, String nombreJugador, int tirosRealizados, int tirosMetidos2, int tirosMetidos3, double porcentajeFG, double porcentajeEFG) throws IOException {
+    private void crearInformeExcel(String nombreArchivo, String nombreJugador, int tirosRealizados, int tirosMetidos2, int tirosMetidos3, double porcentajeFG, double porcentajeEFG, String valor) throws IOException {
         // Crear referencias para Workbook y Sheet
        Workbook libroExcel;
        Sheet hoja;
@@ -251,6 +278,7 @@ public class Interfaz extends javax.swing.JFrame {
            encabezado.createCell(3).setCellValue("Tiros Metidos de 3");
            encabezado.createCell(4).setCellValue("% FG");
            encabezado.createCell(5).setCellValue("% eFG");
+           encabezado.createCell(6).setCellValue("Valoración");
        }
 
        // Buscar la siguiente fila vacía
@@ -264,9 +292,10 @@ public class Interfaz extends javax.swing.JFrame {
        fila.createCell(3).setCellValue(tirosMetidos3);
        fila.createCell(4).setCellValue(porcentajeFG);
        fila.createCell(5).setCellValue(porcentajeEFG);
+       fila.createCell(6).setCellValue(valor);
 
        // Autoajustar columnas
-       for (int i = 0; i <= 5; i++) {
+       for (int i = 0; i <= 6; i++) {
            hoja.autoSizeColumn(i);
        }
 
@@ -280,14 +309,17 @@ public class Interfaz extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonCalcular;
     private javax.swing.JTextField Jugador;
+    private javax.swing.JTextField Jugador1;
     private javax.swing.JSpinner SpinnerRealizados;
     private javax.swing.JSpinner SpinnerTiros2;
     private javax.swing.JSpinner SpinnerTiros3;
+    private javax.swing.JLabel ValoracionTXT;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField valoracionIngreso;
     // End of variables declaration//GEN-END:variables
 }
